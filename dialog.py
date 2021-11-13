@@ -1,5 +1,5 @@
 name = str(input("Привет меня зовут Жарвис, а тебя как зовут ? \n"))
-print("Как дела", name ,"?", end = '\n')
+print("Как дела", name ,"?")
 deals = str(input())
 num1 = int(input("Загадай целое число: "))
 num2 = int(input("Загадай второе целое: "))
