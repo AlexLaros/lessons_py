@@ -1,8 +1,8 @@
 str1 = input("Введите строку(Минимум 3 символа): ")
 
 # проверка минимального ввода: от 3 символов
-while len(str1) > 0:
-    if len(str1) >= 3:
+while len(str1) >= 0:
+    if len(str1) >= 3 and len(str1) != 0:
         break
     else:
         str1 = input("Введите строку из 3 и больше символов:")
@@ -11,7 +11,7 @@ while len(str1) > 0:
 char = input("Введите один символ:")
 
 # проверка ввода только одного символа
-while len(char) > 0:
+while len(char) >= 0:
     if len(char) != 1:
         char = input("Введите только один символ:")
         continue
