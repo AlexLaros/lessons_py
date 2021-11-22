@@ -1,7 +1,6 @@
 # Ввод слов через пробел
 words = input("Введите два слова через пробел:")
-
-# функция разворота
+# функция разваорота
 def reverse():
     if point == 1:
         word1 = words_list[0]
@@ -16,8 +15,8 @@ def reverse():
 
 
 # проверка наличия двух слов
-while len(words) > 0:
-    if words.count(" ") == 0:
+while len(words) >= 0:
+    if words.count(" ") == 0 or len(words) == 0:
         words = input("Попробуйте ещё раз: ")
         continue
     else:
@@ -35,7 +34,6 @@ while len(words) > 0:
                 words = input("Попробуйте ещё раз: ")
                 continue
         else:
-            no_spaces_words_list = []
             no_spaces_words_list = " ".join(words_list).split()
             if len(no_spaces_words_list) == 2:
                 if len(no_spaces_words_list[0]) == 1 and len(no_spaces_words_list[1]) == 1:
@@ -48,4 +46,3 @@ while len(words) > 0:
             else:
                 words = input("Попробуйте ещё раз: ")
                 continue
-    break
