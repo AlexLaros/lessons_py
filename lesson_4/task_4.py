@@ -24,7 +24,7 @@ while len(words) > 0:
         words_list = words.split(" ", maxsplit= -1)
         if words_list.count("") == 0:
             if len(words_list) == 2:
-                if len(words_list[0]) == 0 and len(words_list[1]) == 0:
+                if len(words_list[0]) == 1 and len(words_list[1]) == 1:
                     words = input("Попробуйте ещё раз: ")
                     continue
                 else:
