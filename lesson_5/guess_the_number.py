@@ -21,6 +21,7 @@ def guess_the_num():
                 continue
             elif user_num == comp_num:
                 print(f"Поздравляем! Вы угадали число - '{comp_num}' c {attempt} попытки!")
+                break
         else:
             attempt += 1
             print("Ошибка!")
