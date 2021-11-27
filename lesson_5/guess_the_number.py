@@ -20,7 +20,7 @@ def guess_the_num():
                 print(f"Ваше число {user_num} < ?.")
                 continue
             elif user_num == comp_num:
-                print(f"Поздравляю вы угадали число - '{comp_num}' c {attempt} попытки!")
+                print(f"Поздравляем! Вы угадали число - '{comp_num}' c {attempt} попытки!")
         else:
             attempt += 1
             print("Ошибка!")
