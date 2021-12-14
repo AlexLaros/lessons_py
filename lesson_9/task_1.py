@@ -1,4 +1,6 @@
 def find_sum_of(lst, a):
+     """Данная функция проверяет наличие пары чисел из списка lst, чья сумма 
+    равна числу a """
     summa = []
     for i in lst:
         for j in lst:
