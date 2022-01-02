@@ -59,7 +59,6 @@ def sum_of_rows(matrix) -> list:
     :param matrix: list
     :return: list
     """
-    sum_lst = []
     for i in range(m):
         summa = 0
         for j in range(n):
