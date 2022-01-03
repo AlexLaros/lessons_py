@@ -46,7 +46,7 @@ while True:
                       range(m)]
         sum_lst = []
         matrix_lst.append(sum_lst)
-        # подсчет суммы каждого из столбцов и занесение их в список
+        # подсчет суммы элементов каждого из столбца и занесение их в список
         for i in range(m):
             summa = 0
             for j in range(m):
