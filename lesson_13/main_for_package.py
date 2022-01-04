@@ -19,7 +19,6 @@ s = """
            So very special
            I wish I was special
 """
-print(search.find_max_repeat_word(s))
-print()
+print(search.find_max_repeat_word(s), "\n")
 for i in search.find_prime(1, 200):
     print(i, end=' ')
