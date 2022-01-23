@@ -36,8 +36,8 @@ class Buffer:
             self.sequences.append(l[i])
         self._get_sum_of_five(self.sequences)
 
-    def get_current_part(self, lst: list) -> str:
-        if lst != []:
+  def get_current_part(self) -> str:
+        if self.sequences != []:
             return f"Cохраняемые в данный момент элементы " \
                    f"последовательностей:\n{self.sequences}"
         else:
@@ -48,10 +48,10 @@ class Buffer:
 if __name__ == "__main__":
     s1 = Buffer([])
     s1.add(1, 2, 3)
-    print(s1.get_current_part(s1.sequences))
+    print(s1.get_current_part())
     s1.add(4, 5, 6, 7, 8, 9, 10)
-    print(s1.get_current_part(s1.sequences))
+    print(s1.get_current_part())
     s1.add(11, 12)
-    print(s1.get_current_part(s1.sequences))
+    print(s1.get_current_part())
     s1.add(13, 14, 15)
-    print(s1.get_current_part(s1.sequences))
+    print(s1.get_current_part())
