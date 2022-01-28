@@ -410,6 +410,9 @@ class Notebook:
                                                             "ПОЖАЛУЙСТА, Введите адрес в одну "
                                                             "строку:\nбез пробелов и запятых")
                                                         continue
+                                                    elif adress == "":
+                                                        print("Вы ничего не ввели...")
+                                                        continue
                                                     else:
                                                         break
                                                 editing_note_dict[
